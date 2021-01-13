@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- ==== Css ==== -->
+    <link rel="stylesheet" href="style.css">
+    <title>Gods Eye</title>
+</head>
+
+<body>
+    <header>
+        <h1>GODs Eye</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">About Us</li>
+                <li>Our Work</li>
+                <li>Contact</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">GODS <span>EYE!</span></p>
+            <p class="msg">We Belive in Providing Superior Aerial Imagery Service for all our Projects.</p>
+            <button class="cta">View More!</button>
+        </section>
+
+        <section class="right">
+            <img src="img/GODS EYE IMG right.png">
+        </section>
+
+    </section>
+
+    <div class="icon">
+        <div class="twitt">
+            <i class="fab fa-twitter-square"></i>
+        </div>
+
+        <div class="insta">
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+
+
+
+    <footer class="foot">
+        <h4 class="foot-name">
+            Developed with love by OsDeV&COPY;<span id="copyright"></span> ✊🏿#ENDSARS
+        </h4>
+
+    </footer>
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDlyahZC39MpC1XpYYL-OsnpMNONWEjjm4",
+            authDomain: "godseye331.firebaseapp.com",
+            projectId: "godseye331",
+            storageBucket: "godseye331.appspot.com",
+            messagingSenderId: "852929214713",
+            appId: "1:852929214713:web:d3590437534d6eb5b20a28",
+            measurementId: "G-Q8QTHYB3CP"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</body>
+
+</html>

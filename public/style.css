@@ -149,7 +149,7 @@ button.cta:hover {
 
 .foot {
     width: 100%;
-    height: 18px;
+    height: 10px;
     border-top: 1px solid #fff;
     position: absolute;
     bottom: 0px;
@@ -188,9 +188,11 @@ button.cta:hover {
     }
     .left,
     .right {
+        position: relative;
+        left: 50px;
         width: 100%;
         max-width: 100%;
-        padding: 90px;
+        padding: 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -199,7 +201,7 @@ button.cta:hover {
         font-size: 0.8em;
     }
     .left * {
-        width: 100%;
+        width: 80%;
         margin-bottom: 50px;
         text-align: center;
     }
@@ -207,9 +209,10 @@ button.cta:hover {
         max-width: 40%;
     }
     .right img {
-        bottom: 60px;
-        margin-left: 70px;
-        width: 100%;
+        position: relative;
+        bottom: 90px;
+        margin-left: 10px;
+        width: 50%;
     }
     .icon {
         position: absolute;
@@ -242,7 +245,7 @@ button.cta:hover {
         position: fixed;
         top: 0;
         right: 0;
-        width: 40%;
+        width: 50%;
         height: 60%;
         background: rgb(72, 72, 245, 0.50);
         box-shadow: 0 8px 32px 0 rgb(31, 38, 135, 0.37);
@@ -266,18 +269,37 @@ button.cta:hover {
         transform: translateX(0);
     }
     .menu.opened button {
-        display: block;
+        display: ;
         color: #fff;
     }
 }
 
-@media (max-width:375px) {
-    .left {
-        width: 100%;
-        max-width: 100%;
-        padding: 5px;
-        display: flex;
-        flex-direction: column-reverse;
+@media (max-width: 540px) {
+    .right img {
+        position: relative;
+        width: 50%;
+        bottom: 50px;
         align-items: center;
+    }
+}
+
+.left,
+.right {
+    width: 100%;
+    max-width: 200%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 414px) {
+    .icon {
+        position: relative;
+        width: 50%;
+        bottom: 60px;
+    }
+    footer.foot {
+        height: 2px;
     }
 }
